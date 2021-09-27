@@ -185,6 +185,7 @@ console.log(isTodayMyBirthday())
     Write a function called oldestMovie which finds the oldest movie in the provided movies array.
 */
 
+
 /* EXERCISE 13
     Write a function called countMovies which returns the number of movies contained in the provided movies array.
 */
@@ -362,4 +363,14 @@ const movies = [
         "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
     },
   ];
-  
+  const oldestMovie = function(){
+    let emptyArray = []
+    for(let i = 0; i<= movies.length;i++){
+      emptyArray.push((movies[i].Year))
+    }
+    for(j=0;j<emptyArray.length;i++){
+      OldestMovieIs = Math.min(j)
+    }
+    return
+  }
+  console.log(oldestMovie())
