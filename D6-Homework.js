@@ -102,7 +102,7 @@ const onlyLetters = function(str){
   withNoDigits = str.replace(/\d+/g, '');//Regular expression
   return withNoDigits
   }
-console.log(onlyLetters("SEf24 Strive Sch00l"))
+console.log(onlyLetters("SEf25 Str1ve Sch00l"))
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
