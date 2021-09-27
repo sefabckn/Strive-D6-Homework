@@ -34,7 +34,11 @@ console.log("Generated random number is ", random)
 /* EXERCISE D
     Create a variable called me and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
 */
-
+let me = {
+  name: "Sefa",
+  surname:"Bockun",
+  age: 25,
+}
 /* EXERCISE E
     Write a piece of code for programmatically removing the age property from the previously create object.
 */
