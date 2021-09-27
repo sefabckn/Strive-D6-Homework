@@ -137,8 +137,8 @@ const rollTheDices = function(n1){
   let sum = 0
   for(let i = 1; i<n1+1;i++){
     newArray.push(dice(n1))
-    console.log(newArray)
   }
+  console.log(newArray)
   for (let j=0;j<newArray.length;j++){
     sum+=newArray[j]
   }
@@ -149,11 +149,30 @@ console.log(rollTheDices(5))
 /* EXERCISE 9
    Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
 */
+const howManyDays = function(start= "01/01/2021", date){
+  let date1 = new Date(start);
+  let date2 = new Date(date);
+
+  const OneDay = 1000*60*60*24 // miliseconds of a  day
+  const diffInTime = date2.getTime() - date1.getTime(); // time difference between two dates
+
+  const diffInDays = Math.round(diffInTime/OneDay);
+  return diffInDays
+}
+console.log(howManyDays("27/09/2021"))
 
 /* EXERCISE 10
    Write a function called isTodayMyBirthday which should return true if today's your birthday, false otherwise.
 */
-
+const isTodayMyBirthday = function(myBirthday="21/9/1996"){
+  let dateOfToday = new Date();
+  if(dateOfToday.getMonth() === 9 && dateOfToday.getDay() ===21){
+    return true
+  }else{
+    return false
+  }
+}
+console.log(isTodayMyBirthday())
 // JS Arrays & Objects
 // NOTE: the movies array used in some exercises is defined at the end of this file
 
