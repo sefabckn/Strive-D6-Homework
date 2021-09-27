@@ -106,7 +106,12 @@ console.log(onlyLetters("SEf25 Str1ve Sch00l"))
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
-
+const isThisAnEmail = function(emailString){
+  //Checking the mail adress
+  const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+  return re.test(String(emailString).toLowerCase())
+}
+console.log(isThisAnEmail("sefabckn@gmail.com"))
 /* EXERCISE 7
    Write a function called whatDayIsIt that should return the current day of the week.
 */
