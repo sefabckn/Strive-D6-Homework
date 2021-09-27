@@ -42,7 +42,8 @@ let me = {
 /* EXERCISE E
     Write a piece of code for programmatically removing the age property from the previously create object.
 */
-
+delete me.age;
+console.log(me)
 /* EXERCISE F
    Write a piece of code for programmatically adding to the me object you defined before an array called skills, containing the programming languages you know right now.
 */
