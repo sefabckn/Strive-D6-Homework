@@ -98,7 +98,11 @@ console.log(deleteOne("Sefa",false))
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
-
+const onlyLetters = function(str){
+  withNoDigits = str.replace(/\d+/g, '');
+  return withNoDigits
+  }
+console.log(onlyLetters("SEf24Strive Sch00l"))
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
